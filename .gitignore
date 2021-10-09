@@ -1,0 +1,10 @@
+*.cfg
+*.idea
+*~
+*.log
+__pycache__
+runs
+output
+
+
+
