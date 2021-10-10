@@ -2,12 +2,9 @@
 
 ![students blurred](data/students2_67_66.jpg)
 
-<p align="center">
-versus standard face blurring tool proposal
-</p>
+Versus standard face blurring tool rectangular regions :
 
 ![students blurred](data/students2_defaced.jpg)
-
 
 ## 3D Dense Face Alignment project
 
@@ -18,7 +15,7 @@ Realtime face modeling. Computing Basel Face Model, with 38000+ face landmarks!
 Paper _Towards Fast, Accurate and Stable 3D Dense Face Alignment_, 2020/09, 
 https://arxiv.org/abs/2009.09960
 
-Official PyTorch implementation : https://github.com/cleardusk/3DDFA_V2
+Official PyTorch implementation of **3D Dense Face Alignment** : https://github.com/cleardusk/3DDFA_V2
 
 ```shell script
 git clone https://github.com/cleardusk/3DDFA_V2.git
@@ -31,6 +28,7 @@ sh ./build.sh
 ```shell script
 cd ..
 git clone https://github.com/scoutant/face-blur.git
+cd 3DDFA_V2
 python ../face-blur/blur.py -f ../face-blur/data/students2.jpg
 ```
 
@@ -54,10 +52,6 @@ We are ready to blend the 2 images accordingly to the mask: hence operating a li
 
 The kernel size for the gaussian blur does matter. It has to be related to the size of the face region of interest.
 
-OpenCV's findContrours() function will provide the dimension of the bounding box and we can choose the kernel as a proportion of the size.  
-
-![alyssa defaced](data/alyssa-campanella_defaced.jpg)
-
-![alyssa blurred](data/alyssa_campanella_59_57.png)
+OpenCV's findContrours() function will provide the dimension of the bounding box and we can choose the kernel as a proportion of the size.
 
 
